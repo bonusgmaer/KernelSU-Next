@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<!--https://ci.android.com/builds/submitted/13918790/kernel_virt_x86_64/latest/manifest_13918790.xml-->
+<!--https://ci.android.com/builds/submitted/12730142/kernel_virt_x86_64/latest/manifest_12730142.xml-->
 <manifest>
   <remote name="aosp" fetch="https://android.googlesource.com/" review="https://android.googlesource.com/" />
 
@@ -7,7 +7,7 @@
 
   <superproject name="kernel/superproject" remote="aosp" revision="common-android15-6.6" />
 
-  <project path="build/kernel" name="kernel/build" groups="ddk" revision="96662ff3cedac14ebbeebf17fc91b5a8c9f883d9">
+  <project path="build/kernel" name="kernel/build" groups="ddk" revision="6e32d73cf9b7aa0a8258438d473340fb56fe5226">
     <linkfile dest="tools/bazel" src="kleaf/bazel.sh" />
 
     <linkfile dest="WORKSPACE" src="kleaf/bazel.WORKSPACE" />
@@ -17,15 +17,13 @@
     <linkfile dest="WORKSPACE.bzlmod" src="kleaf/bzlmod/bazel.WORKSPACE.bzlmod" />
 </project>
 
-  <project path="build/bazel_common_rules" name="platform/build/bazel_common_rules" groups="ddk" revision="9530bee133971f25758a2e1085755200999ca1bf" />
+  <project path="build/bazel_common_rules" name="platform/build/bazel_common_rules" groups="ddk" revision="2302fbc4996dc796d8cfa3802bf57cf71ce5c245" />
 
-  <project path="common" name="kernel/common" revision="ef3981dcd325d312d1aa6dd8bdc67d0ac9a5c943">
-    <linkfile dest=".bazelignore" src=".bazelignore" />
-</project>
+  <project path="common" name="kernel/common" revision="d66e9166bfa175691dd2d0ad7f65c9fec54aa520" />
 
-  <project path="kernel/configs" name="kernel/configs" revision="bd79f38685cf939ab836dd8ddd2e01506ccff47a" />
+  <project path="kernel/configs" name="kernel/configs" revision="76dd129942d2d1a1ccaa3ea0effa682e9e1828ac" />
 
-  <project path="kernel/tests" name="kernel/tests" revision="7b2005bacbf91c5c494abded85b3c7fea88862a8">
+  <project path="kernel/tests" name="kernel/tests" revision="6389b876d70463e902559b2f79cd2616b3cc37b7">
     <linkfile dest="run_test_only.sh" src="tools/run_test_only.sh" />
 
     <linkfile dest="launch_cvd.sh" src="tools/launch_cvd.sh" />
@@ -35,15 +33,15 @@
 
   <project path="common-modules/trusty" name="kernel/common-modules/trusty" revision="98978dd77173b8b4ce131b29752a882913a9bac3" />
 
-  <project path="common-modules/virtio-media" name="platform/external/virtio-media" revision="9b36409c9bc97ca7411751185f7139f05ac990ca" />
+  <project path="common-modules/virtio-media" name="platform/external/virtio-media" revision="dc89788dbd5742eeabcf34c6e7ab41479ac8ad7e" />
 
-  <project path="common-modules/virtual-device" name="kernel/common-modules/virtual-device" revision="211d96f861e1d6061ecb6bbe6e289ce8bf144290" />
+  <project path="common-modules/virtual-device" name="kernel/common-modules/virtual-device" revision="cd5c6ce1e5706ee0262bcd2811feacfb63c56f3b" />
 
   <project path="prebuilts/clang/host/linux-x86" name="platform/prebuilts/clang/host/linux-x86" clone-depth="1" groups="ddk" revision="7061673283909f372f4938e45149d23bd10cbd40" />
 
   <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8" clone-depth="1" groups="ddk" revision="739d8a41b6096d384338a62995a04739aff8693d" />
 
-  <project path="prebuilts/build-tools" name="platform/prebuilts/build-tools" clone-depth="1" groups="ddk" revision="bfa65e7422cc88dc64ef3ca224daf214a77fb4d5" />
+  <project path="prebuilts/build-tools" name="platform/prebuilts/build-tools" clone-depth="1" groups="ddk" revision="5c0b50c49d7c958c05cd3050e43f4772003df800" />
 
   <project path="prebuilts/clang-tools" name="platform/prebuilts/clang-tools" clone-depth="1" revision="1634c6a556d1f2c24897bf74156c6449486e8941" />
 
@@ -51,9 +49,9 @@
 
   <project path="prebuilts/rust" name="platform/prebuilts/rust" clone-depth="1" revision="442511af884f074018466f85b4daadd4b0ac0050" />
 
-  <project path="prebuilts/tradefed" name="platform/tools/tradefederation/prebuilts" revision="52121d9a4653ff92b9bd225bd417b6a288c36b58" clone-depth="1" />
+  <project path="prebuilts/tradefed" name="platform/tools/tradefederation/prebuilts" revision="77fa04f24cb7161ca3f1874aa9b5c75a0e8d0334" clone-depth="1" />
 
-  <project path="prebuilts/asuite" name="platform/prebuilts/asuite" revision="d90d0060aedfd80f2119c1db5339a093f2758926" clone-depth="1" />
+  <project path="prebuilts/asuite" name="platform/prebuilts/asuite" revision="d1d442009e9e135656d61f0514a71c0246ae3449" clone-depth="1" />
 
   <project path="tools/mkbootimg" name="platform/system/tools/mkbootimg" revision="f5c284e8998dd8a085cf027bb518b6c2b84cf744" />
 
