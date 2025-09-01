@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<!--https://ci.android.com/builds/submitted/13751457/kernel_virt_x86_64/latest/manifest_13751457.xml-->
+<!--https://ci.android.com/builds/submitted/12858026/kernel_virt_x86_64/latest/manifest_12858026.xml-->
 <manifest>
   <remote name="aosp" fetch="https://android.googlesource.com/" review="https://android.googlesource.com/" />
 
@@ -7,7 +7,7 @@
 
   <superproject name="kernel/superproject" remote="aosp" revision="common-android14-6.1" />
 
-  <project path="build/kernel" name="kernel/build" revision="19a5d59e812ce023f5c26aa4d6080e99ade17ffd">
+  <project path="build/kernel" name="kernel/build" revision="e889217430cfbe3b6dfd56c59cb6b9205354551f">
     <linkfile dest="tools/bazel" src="kleaf/bazel.sh" />
 
     <linkfile dest="WORKSPACE" src="kleaf/bazel.WORKSPACE" />
@@ -17,31 +17,31 @@
     <linkfile dest="build/config.sh" src="config.sh" />
 </project>
 
-  <project path="common" name="kernel/common" revision="e2deb0b42a3a8a994fd301a89fcf70ff0896ccb6" />
+  <project path="common" name="kernel/common" revision="e2b9748880b939d8d99877b72cc4cc42951d49b6" />
 
-  <project path="kernel/configs" name="kernel/configs" revision="bd79f38685cf939ab836dd8ddd2e01506ccff47a" />
+  <project path="kernel/configs" name="kernel/configs" revision="ca1b35a3d53d19f96dcbdfdfd0545e7931e0ddde" />
 
-  <project path="kernel/tests" name="kernel/tests" revision="7b2005bacbf91c5c494abded85b3c7fea88862a8">
+  <project path="kernel/tests" name="kernel/tests" revision="3c6e5671e157d0f26e9c42e23bda2b8d8f78088a">
     <linkfile dest="run_test_only.sh" src="tools/run_test_only.sh" />
 
     <linkfile dest="launch_cvd.sh" src="tools/launch_cvd.sh" />
 </project>
 
-  <project path="common-modules/virtual-device" name="kernel/common-modules/virtual-device" revision="f2eb8e837a6d6a70b65d6916829f57b5c98e99f9" />
+  <project path="common-modules/virtual-device" name="kernel/common-modules/virtual-device" revision="8a81b52125b929cc1c2b9a7ba1da70d338a7c3e7" />
 
   <project path="prebuilts/clang/host/linux-x86" name="platform/prebuilts/clang/host/linux-x86" clone-depth="1" revision="7775eb113f960bc69a780b621d03a715914d4bca" />
 
   <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8" clone-depth="1" revision="f6d40532273c8bd628b960ecc0970c7294c8d891" />
 
-  <project path="prebuilts/build-tools" name="platform/prebuilts/build-tools" clone-depth="1" revision="4649614b4030ad825f2e94401d04526651f44e88" />
+  <project path="prebuilts/build-tools" name="platform/prebuilts/build-tools" clone-depth="1" revision="c181f690fe9b76142b3203c2ab959b6299d4d1fd" />
 
   <project path="prebuilts/clang-tools" name="platform/prebuilts/clang-tools" clone-depth="1" revision="f08a96e4015aed7c0341b880ccd85500b1b44a26" />
 
   <project path="prebuilts/kernel-build-tools" name="kernel/prebuilts/build-tools" clone-depth="1" revision="e905be252a53d20c52bd9e59df3ff8fdd46b9eab" />
 
-  <project path="prebuilts/tradefed" name="platform/tools/tradefederation/prebuilts" revision="52121d9a4653ff92b9bd225bd417b6a288c36b58" clone-depth="1" />
+  <project path="prebuilts/tradefed" name="platform/tools/tradefederation/prebuilts" revision="23f728a2f26f239a9ae52f56fb1613f52c04d1bd" clone-depth="1" />
 
-  <project path="prebuilts/asuite" name="platform/prebuilts/asuite" revision="d90d0060aedfd80f2119c1db5339a093f2758926" clone-depth="1" />
+  <project path="prebuilts/asuite" name="platform/prebuilts/asuite" revision="ce0da80f66cde39edc5bcb12819275c0f7231261" clone-depth="1" />
 
   <project path="tools/mkbootimg" name="platform/system/tools/mkbootimg" revision="615a1fced5f8e2755642d30357674d3bfa21b85e" />
 
@@ -53,7 +53,7 @@
 
   <project path="external/bazel-skylib" name="platform/external/bazel-skylib" revision="f998e5dc13c03f0eae9e373263d3afff0932c738" />
 
-  <project path="build/bazel_common_rules" name="platform/build/bazel_common_rules" revision="62c496cd1d821948d2f4a7fcf702e54416e5a754" />
+  <project path="build/bazel_common_rules" name="platform/build/bazel_common_rules" revision="a68db35033819d60a5b200f36c2484fab1b161dd" />
 
   <project path="external/stardoc" name="platform/external/stardoc" revision="e83f522ee95419e55d2c5654aa6e0143beeef595" />
 
