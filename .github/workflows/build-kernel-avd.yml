@@ -26,14 +26,12 @@ jobs:
           - version: "android-14-avd_x86_64"
             manifest: "android-14-avd_x86_64.xml"
             arch: "x86_64"
-          - version: "android-15-avd_aarch64"
-            manifest: "android-15-avd_aarch64.xml"
-            arch: "aarch64"
-          - version: "android-15-avd_x86_64"
-            manifest: "android-15-avd_x86_64.xml"
-            arch: "x86_64"
+            android_version: "android14"
+            kernel_version: "6.1"
     with:
       version_name: ${{ matrix.version }}
       manifest_name: ${{ matrix.manifest }}
+      android_version: ${{ matrix.android_version }}
+      kernel_version: ${{ matrix.kernel_version }}
       arch: ${{ matrix.arch }}
       debug: true
