@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<!--https://ci.android.com/builds/submitted/12736184/kernel_virt_x86_64/latest/manifest_12736184.xml-->
+<!--https://ci.android.com/builds/submitted/12183035/kernel_virt_x86_64/latest/manifest_12183035.xml-->
 <manifest>
   <remote name="aosp" fetch="https://android.googlesource.com/" review="https://android.googlesource.com/" />
 
@@ -7,7 +7,7 @@
 
   <superproject name="kernel/superproject" remote="aosp" revision="common-android14-6.1" />
 
-  <project path="build/kernel" name="kernel/build" revision="6d07050b138420159210a3a8039bc0c16c1e188c">
+  <project path="build/kernel" name="kernel/build" revision="f9636755ac73ae382695a7ea51022b0c2febeefd">
     <linkfile dest="tools/bazel" src="kleaf/bazel.sh" />
 
     <linkfile dest="WORKSPACE" src="kleaf/bazel.WORKSPACE" />
@@ -17,17 +17,13 @@
     <linkfile dest="build/config.sh" src="config.sh" />
 </project>
 
-  <project path="common" name="kernel/common" revision="997d1e6f69f19132c03f29612f28aefbc2566f39" />
+  <project path="common" name="kernel/common" revision="37391192a93aed8e29291c4d32bd5a3f3b19fa22" />
 
-  <project path="kernel/configs" name="kernel/configs" revision="76dd129942d2d1a1ccaa3ea0effa682e9e1828ac" />
+  <project path="kernel/tests" name="kernel/tests" revision="a2acaf18ab3d4ba873060a3041a90f68b2f1a414" />
 
-  <project path="kernel/tests" name="kernel/tests" revision="bb56a7198b3e40c17fc91e6153352dadab81ba45">
-    <linkfile dest="run_test_only.sh" src="tools/run_test_only.sh" />
+  <project path="kernel/configs" name="kernel/configs" revision="07e726fb7d0dc50ba6d8dcbbbe8def8d5ee9c573" />
 
-    <linkfile dest="launch_cvd.sh" src="tools/launch_cvd.sh" />
-</project>
-
-  <project path="common-modules/virtual-device" name="kernel/common-modules/virtual-device" revision="2aeef344eb3f8a39f78cd2547b8434fc0d10d02c" />
+  <project path="common-modules/virtual-device" name="kernel/common-modules/virtual-device" revision="6282281e9858f54e69552d9658bf25c1b9e1e3b7" />
 
   <project path="prebuilts/clang/host/linux-x86" name="platform/prebuilts/clang/host/linux-x86" clone-depth="1" revision="7775eb113f960bc69a780b621d03a715914d4bca" />
 
@@ -39,10 +35,6 @@
 
   <project path="prebuilts/kernel-build-tools" name="kernel/prebuilts/build-tools" clone-depth="1" revision="e905be252a53d20c52bd9e59df3ff8fdd46b9eab" />
 
-  <project path="prebuilts/tradefed" name="platform/tools/tradefederation/prebuilts" revision="77fa04f24cb7161ca3f1874aa9b5c75a0e8d0334" clone-depth="1" />
-
-  <project path="prebuilts/asuite" name="platform/prebuilts/asuite" revision="d1d442009e9e135656d61f0514a71c0246ae3449" clone-depth="1" />
-
   <project path="tools/mkbootimg" name="platform/system/tools/mkbootimg" revision="615a1fced5f8e2755642d30357674d3bfa21b85e" />
 
   <project path="prebuilts/bazel/linux-x86_64" name="platform/prebuilts/bazel/linux-x86_64" clone-depth="1" revision="7bfbec9e829bbae6816d5f39aba345df76e627c1" />
@@ -53,7 +45,7 @@
 
   <project path="external/bazel-skylib" name="platform/external/bazel-skylib" revision="f998e5dc13c03f0eae9e373263d3afff0932c738" />
 
-  <project path="build/bazel_common_rules" name="platform/build/bazel_common_rules" revision="a68db35033819d60a5b200f36c2484fab1b161dd" />
+  <project path="build/bazel_common_rules" name="platform/build/bazel_common_rules" revision="b4f0919269ec78d28ec32a34ca90e107c3a41f4e" />
 
   <project path="external/stardoc" name="platform/external/stardoc" revision="e83f522ee95419e55d2c5654aa6e0143beeef595" />
 
