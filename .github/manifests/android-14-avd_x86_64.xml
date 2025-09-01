@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<!--https://ci.android.com/builds/submitted/14021365/kernel_virt_x86_64/latest/manifest_14021365.xml-->
+<!--https://ci.android.com/builds/submitted/13751457/kernel_virt_x86_64/latest/manifest_13751457.xml-->
 <manifest>
   <remote name="aosp" fetch="https://android.googlesource.com/" review="https://android.googlesource.com/" />
 
@@ -7,7 +7,7 @@
 
   <superproject name="kernel/superproject" remote="aosp" revision="common-android14-6.1" />
 
-  <project path="build/kernel" name="kernel/build" revision="6b755daf3fe8f72535db53518d9271811554c83f">
+  <project path="build/kernel" name="kernel/build" revision="19a5d59e812ce023f5c26aa4d6080e99ade17ffd">
     <linkfile dest="tools/bazel" src="kleaf/bazel.sh" />
 
     <linkfile dest="WORKSPACE" src="kleaf/bazel.WORKSPACE" />
@@ -17,7 +17,7 @@
     <linkfile dest="build/config.sh" src="config.sh" />
 </project>
 
-  <project path="common" name="kernel/common" revision="02ca81000485c69cbf9416dbd45ade9f22af21de" />
+  <project path="common" name="kernel/common" revision="e2deb0b42a3a8a994fd301a89fcf70ff0896ccb6" />
 
   <project path="kernel/configs" name="kernel/configs" revision="bd79f38685cf939ab836dd8ddd2e01506ccff47a" />
 
