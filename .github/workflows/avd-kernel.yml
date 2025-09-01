@@ -100,7 +100,6 @@ jobs:
           cp ../susfs4ksu/kernel_patches/include/linux/* ./common/include/linux/
 
           echo "Applying SUSFS patches for KernelSU Next..."
-          ls -lah
           cd $GITHUB_WORKSPACE/KernelSU-Next
           cp ../susfs4ksu/kernel_patches/KernelSU/10_enable_susfs_for_ksu.patch ./
           patch -p1 --forward < 10_enable_susfs_for_ksu.patch || true
