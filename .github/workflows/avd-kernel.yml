@@ -85,6 +85,9 @@ jobs:
         run: |
           SUSFS_BRANCH="gki-${{ inputs.android_version }}-${{ inputs.kernel_version }}"
           git clone https://gitlab.com/simonpunk/susfs4ksu.git -b "$SUSFS_BRANCH"
+          cd susfs4ksu
+          git checkout cbda111c1283846e5e3bee18a2e71b8c9a1403c0
+          cd $GITHUB_WORKSPACE
           git clone https://github.com/WildPlusKernel/kernel_patches.git
 
           cd $GITHUB_WORKSPACE/android-kernel
